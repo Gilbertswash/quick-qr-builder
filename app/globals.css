@@ -2,21 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Basic theming and dark-mode friendliness */
 :root { color-scheme: light dark; }
 html, body { min-height: 100%; }
-
-@import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
